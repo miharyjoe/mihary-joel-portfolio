@@ -16,9 +16,11 @@ const Hero = () => (
       description={
         <>
           <strong>Back-End  Developer </strong>from Madagascar. {' '} 
-<br></br>
-          "You stop to <strong className='text-cyan-500'>LEAD</strong> when you stop to
-           <strong className='text-cyan-500'>LEARN</strong>"
+          <br></br>
+          <blockquote>
+            "You stop to <strong className='text-cyan-500'>LEAD</strong> when you stop to
+            <strong className='text-cyan-500'>LEARN</strong>"
+          </blockquote>
         </>
       }
       avatar={
