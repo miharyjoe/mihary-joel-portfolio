@@ -10,54 +10,55 @@ const Hero = () => (
     <HeroAvatar
       title={
         <>
-          Hi there, I'm <GradientText>Mihary Joel ANDRIAMILANTO</GradientText> 👋
+          Hi there ! , I'm <GradientText>Mihary Joel ANDRIAMILANTO</GradientText> 👋
         </>
       }
       description={
         <>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus{' '}
-          <a className="text-cyan-400 hover:underline" href="/">
-            malesuada
-          </a>{' '}
-          nisi tellus, non imperdiet nisi tempor at. Lorem ipsum dolor sit amet,{' '}
-          <a className="text-cyan-400 hover:underline" href="/">
-            consectetur
-          </a>{' '}
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+          <strong>Back-End  Developer </strong>from Madagascar. {' '} 
+<br></br>
+          "You stop to <strong className='text-cyan-500'>LEAD</strong> when you stop to
+           <strong className='text-cyan-500'>LEARN</strong>"
         </>
       }
       avatar={
         <img
           className="h-80 w-64"
-          src="/assets/images/avatar.svg"
-          alt="Avatar image"
+          src="/assets/images/miharyHd.png"
+          alt="Mihary Image"
           loading="lazy"
         />
       }
       socialButtons={
         <>
-          <a href="/">
+          <a target="_blank" href="/">
             <HeroSocial
               src="/assets/images/twitter-icon.png"
               alt="Twitter icon"
             />
           </a>
-          <a href="/">
+          <a target="_blank" href="/">
             <HeroSocial
               src="/assets/images/facebook-icon.png"
               alt="Facebook icon"
             />
           </a>
-          <a href="/">
+          <a target="_blank" href="https://www.linkedin.com/in/mihary-jo%C3%ABl-andriamilanto-374609233/">
             <HeroSocial
               src="/assets/images/linkedin-icon.png"
               alt="Linkedin icon"
             />
           </a>
-          <a href="/">
+          <a target="_blank" href="/">
             <HeroSocial
               src="/assets/images/youtube-icon.png"
               alt="Youtube icon"
+            />
+          </a>
+          <a target="_blank" href="mailto:miharyjoel@gmail.com" className="w-11 max-h-10">
+            <HeroSocial
+              src="/assets/images/mail-icon.png"
+              alt="Email icon"
             />
           </a>
         </>
