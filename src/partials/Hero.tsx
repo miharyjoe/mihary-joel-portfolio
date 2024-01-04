@@ -12,6 +12,7 @@ const Hero = () => (
         <>
           Hi there ! , I'm - <br></br>{' '}
           <GradientText>Mihary Joel ANDRIAMILANTO</GradientText> 👋
+          <br></br>I Love coding and love Java and Typescript
         </>
       }
       description={
