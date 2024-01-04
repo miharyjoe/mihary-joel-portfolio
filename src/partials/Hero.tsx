@@ -49,7 +49,10 @@ const Hero = () => (
               alt="Linkedin icon"
             />
           </a>
-          <a target="_blank" href="www.youtube.com/@miharyjoel2832">
+          <a
+            target="_blank"
+            href="https://www.youtube.com/channel/UCz-qQM_WrPswaAP7w6cdv4A"
+          >
             <HeroSocial
               src="/assets/images/youtube-icon.png"
               alt="Youtube icon"
