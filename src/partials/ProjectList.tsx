@@ -9,9 +9,19 @@ import {
 const ProjectList = () => (
   <Section
     title={
-      <>
-        Recent <GradientText>Projects</GradientText>
-      </>
+      <div className="flex items-baseline justify-between">
+        <div>
+          Recent <GradientText>Projects</GradientText>
+        </div>
+        <div className="text-sm">
+          <a
+            href="https://github.com/miharyjoe?tab=repositories"
+            target="_blank"
+          >
+            View all Projects →
+          </a>
+        </div>
+      </div>
     }
   >
     <div className="flex flex-col gap-6">
