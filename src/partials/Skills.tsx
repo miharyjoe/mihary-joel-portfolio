@@ -8,35 +8,90 @@ const Skills = () => (
       </div>
     }
   >
-    <div className="flex justify-between">
-      <div>
+    <div className="flex flex-col justify-center md:flex-row md:justify-between">
+      <div className="mb-8 md:mb-0">
         <h2 className="text-xl">
           <GradientText>Front-end</GradientText>
         </h2>
-        <ul>
-          <li>Typescript</li>
-          <li>React</li>
-          <li>Tailwind</li>
+        <ul className="mt-3">
+          <li className="mt-3 flex items-center">
+            <img
+              src="/public/assets/images/typescript-icon.svg"
+              alt="typescript logo"
+              className="h-6 w-6"
+            />
+            <span className="ml-2">Typescript</span>
+          </li>
+          <li className="mt-3 flex items-center">
+            <img
+              src="/public/assets/images/react-2.svg"
+              alt="react logo"
+              className="h-6 w-6"
+            />
+            <span className="ml-2">React</span>
+          </li>
+          <li className="mt-3 flex items-center">
+            <img
+              src="/public/assets/images/tailwindcss-icon.svg"
+              alt="tailwind logo"
+              className="h-6 w-6"
+            />
+            <span className="ml-2">Tailwind</span>
+          </li>
         </ul>
-      </div>{' '}
-      <div>
+      </div>
+      <div className="mb-8 md:mb-0">
         <h2 className="text-xl">
           <GradientText>Back-end</GradientText>
         </h2>
-        <ul>
-          <li>Java</li>
-          <li>Spring & spring boot</li>
-          <li>PostgreSql</li>
+        <ul className="mt-3">
+          <li className="mt-3 flex items-center">
+            <img
+              src="/public/assets/images/java.svg"
+              alt="java icon"
+              className="h-6 w-6"
+            />
+            <span className="ml-2">Java</span>
+          </li>
+          <li className="mt-3 flex items-center">
+            <img
+              src="/public/assets/images/spring.svg"
+              alt="spring icon"
+              className="h-6 w-6"
+            />
+            <span className="ml-2">Spring & spring boot</span>
+          </li>
+          <li className="mt-3 flex items-center">
+            <img
+              src="/public/assets/images/postgresql.svg"
+              alt="postgresql icon"
+              className="h-6 w-6"
+            />
+            <span className="ml-2">PostgreSql</span>
+          </li>
         </ul>
       </div>
-      <div>
+      <div className="mb-8 md:mb-0">
         <h2 className="text-xl">
           <GradientText>Others</GradientText>
         </h2>
-        <ul>
-          <li>AWS</li>
-          <li>Git & GitHub</li>
-          <li>DevOps</li>
+        <ul className="mt-3">
+          <li className="mt-3 flex items-center">
+            <img
+              src="/public/assets/images/aws.svg"
+              alt="aws logo"
+              className="h-6 w-6"
+            />
+            <span className="ml-2">AWS</span>
+          </li>
+          <li className="mt-3 flex items-center">
+            <img
+              src="/public/assets/images/github-icon.svg"
+              alt="github icon"
+              className="h-6 w-6"
+            />
+            <span className="ml-2">Git & GitHub</span>
+          </li>
         </ul>
       </div>
     </div>
