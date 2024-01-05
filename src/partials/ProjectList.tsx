@@ -26,51 +26,45 @@ const ProjectList = () => (
   >
     <div className="flex flex-col gap-6">
       <Project
-        name="Project 1"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        bibendum. Nunc non posuere consectetur, justo erat semper enim, non
-        hendrerit dui odio id enim."
-        link="/"
+        name="Reddit Clone"
+        description="A simple spring boot Reddit Clone"
+        link="https://github.com/miharyjoe/spring-reddit-clone"
         img={{
           src: '/assets/images/project-web-design.png',
           alt: 'Project Web Design',
         }}
         category={
           <>
-            <Tags color={ColorTags.FUCHSIA}>Astro.js</Tags>
-            <Tags color={ColorTags.LIME}>Web design</Tags>
+            <Tags color={ColorTags.FUCHSIA}>Angular</Tags>
+            <Tags color={ColorTags.LIME}>Spring boot</Tags>
             <Tags color={ColorTags.SKY}>Tailwind.css</Tags>
             <Tags color={ColorTags.ROSE}>TypeScript</Tags>
           </>
         }
       />
       <Project
-        name="Project 2"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        bibendum. Nunc non posuere consectetur, justo erat semper enim, non
-        hendrerit dui odio id enim."
+        name="Job App"
+        description="An application mobile made with react native for looking job using the job search in rapid api"
         link="/"
         img={{ src: '/assets/images/project-fire.png', alt: 'Project Fire' }}
         category={
           <>
-            <Tags color={ColorTags.VIOLET}>Next.js</Tags>
-            <Tags color={ColorTags.EMERALD}>Blog</Tags>
+            <Tags color={ColorTags.VIOLET}>React native</Tags>
+            <Tags color={ColorTags.EMERALD}>mobile app</Tags>
             <Tags color={ColorTags.YELLOW}>JavaScript</Tags>
           </>
         }
       />
       <Project
-        name="Project 3"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        bibendum. Nunc non posuere consectetur, justo erat semper enim, non
-        hendrerit dui odio id enim."
-        link="/"
+        name="Image To Pdf Api"
+        description="A simple Api rest when we upload images and convert them in pdf"
+        link="https://github.com/miharyjoe/Image-To-Pdf-Api"
         img={{ src: '/assets/images/project-maps.png', alt: 'Project Maps' }}
         category={
           <>
-            <Tags color={ColorTags.FUCHSIA}>Astro.js</Tags>
-            <Tags color={ColorTags.INDIGO}>Bootstrap</Tags>
-            <Tags color={ColorTags.ROSE}>TypeScript</Tags>
+            <Tags color={ColorTags.FUCHSIA}>Spring boot</Tags>
+            <Tags color={ColorTags.INDIGO}>Java</Tags>
+            <Tags color={ColorTags.ROSE}>API</Tags>
           </>
         }
       />

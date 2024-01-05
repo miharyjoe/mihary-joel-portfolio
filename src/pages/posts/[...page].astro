@@ -10,7 +10,6 @@ import {
   Section,
 } from 'astro-boilerplate-components';
 
-import { CTA } from '@/partials/CTA';
 import Base from '@/templates/Base.astro';
 import { AppConfig } from '@/utils/AppConfig';
 import { sortByDate } from '@/utils/Posts';
@@ -35,15 +34,14 @@ const { page } = Astro.props as Props;
 const titleSuffix = ` - ${AppConfig.site_name}`;
 const titleBase = `Blog page ${page.currentPage}`;
 const title = titleBase + titleSuffix;
-const description =
-  'Pagination example built with Astro styled with Tailwind CSS.';
+const description = 'Here, i share my knowledge and tips for you';
 ---
 
 <Base head={{ title, description }}>
   <Section>
     <PaginationHeader
-      title='Random title here'
-      description='Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+      title='My blog posts'
+      description='Here, i share my knowledge and tips for you'
     />
   </Section>
 
@@ -54,6 +52,4 @@ const description =
   <Section>
     <NewerOlderPagination page={page} />
   </Section>
-
-  <CTA />
 </Base>
