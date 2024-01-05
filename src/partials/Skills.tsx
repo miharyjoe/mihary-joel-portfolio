@@ -16,7 +16,7 @@ const Skills = () => (
         <ul className="mt-3">
           <li className="mt-3 flex items-center">
             <img
-              src="/public/assets/images/typescript-icon.svg"
+              src="/assets/images/typescript-icon.svg"
               alt="typescript logo"
               className="h-6 w-6"
             />
@@ -24,7 +24,7 @@ const Skills = () => (
           </li>
           <li className="mt-3 flex items-center">
             <img
-              src="/public/assets/images/react-2.svg"
+              src="/assets/images/react-2.svg"
               alt="react logo"
               className="h-6 w-6"
             />
@@ -32,7 +32,7 @@ const Skills = () => (
           </li>
           <li className="mt-3 flex items-center">
             <img
-              src="/public/assets/images/tailwindcss-icon.svg"
+              src="/assets/images/tailwindcss-icon.svg"
               alt="tailwind logo"
               className="h-6 w-6"
             />
@@ -47,7 +47,7 @@ const Skills = () => (
         <ul className="mt-3">
           <li className="mt-3 flex items-center">
             <img
-              src="/public/assets/images/java.svg"
+              src="/assets/images/java.svg"
               alt="java icon"
               className="h-6 w-6"
             />
@@ -55,7 +55,7 @@ const Skills = () => (
           </li>
           <li className="mt-3 flex items-center">
             <img
-              src="/public/assets/images/spring.svg"
+              src="/assets/images/spring.svg"
               alt="spring icon"
               className="h-6 w-6"
             />
@@ -63,7 +63,7 @@ const Skills = () => (
           </li>
           <li className="mt-3 flex items-center">
             <img
-              src="/public/assets/images/postgresql.svg"
+              src="/assets/images/postgresql.svg"
               alt="postgresql icon"
               className="h-6 w-6"
             />
@@ -78,7 +78,7 @@ const Skills = () => (
         <ul className="mt-3">
           <li className="mt-3 flex items-center">
             <img
-              src="/public/assets/images/aws.svg"
+              src="/assets/images/aws.svg"
               alt="aws logo"
               className="h-6 w-6"
             />
@@ -86,7 +86,7 @@ const Skills = () => (
           </li>
           <li className="mt-3 flex items-center">
             <img
-              src="/public/assets/images/github-icon.svg"
+              src="/assets/images/github-icon.svg"
               alt="github icon"
               className="h-6 w-6"
             />
