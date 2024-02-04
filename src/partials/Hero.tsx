@@ -36,10 +36,7 @@ const Hero = () => (
       socialButtons={
         <>
           <a target="_blank" href="https://twitter.com/miharyjoel">
-            <HeroSocial
-              src="/assets/images/twitter-icon.png"
-              alt="Twitter icon"
-            />
+            <HeroSocial src="/assets/images/x.png" alt="Twitter icon" />
           </a>
           <a
             target="_blank"
