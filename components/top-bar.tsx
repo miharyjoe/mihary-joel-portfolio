@@ -23,7 +23,7 @@ export function TopBar() {
         </div>
 
         {/* Middle Section */}
-        <div className="flex-1 flex items-center px-4 gap-2">
+        <div className="flex-1 flex items-center px-4 gap-2 justify-center">
           <div className="flex-1 max-w-xl relative">
             <Search className="absolute left-2 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
             <Input
