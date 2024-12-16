@@ -1,5 +1,33 @@
 import { ChevronDown, FileIcon, Folder } from "lucide-react";
 
+const items = [
+  {
+    title: "Home.tsx",
+    url: "#",
+    icon: FileIcon,
+  },
+  {
+    title: "About.tsx",
+    url: "#",
+    icon: FileIcon,
+  },
+  {
+    title: "Project.tsx",
+    url: "#",
+    icon: FileIcon,
+  },
+  {
+    title: "Blog.tsx",
+    url: "#",
+    icon: FileIcon,
+  },
+  {
+    title: "README.md",
+    url: "#",
+    icon: FileIcon,
+  },
+];
+
 export function SideBar() {
   return (
     <div className="w-0 sm:w-60 border-r transition-all hidden sm:block">
@@ -18,26 +46,15 @@ export function SideBar() {
             <span className="text-sm">Mihary portfolio</span>
           </div>
           <div className="ml-4">
-            <div className="flex items-center gap-1 px-2 py-1 hover:bg-accent rounded-sm cursor-pointer">
-              <FileIcon className="h-4 w-4 shrink-0" />
-              <span className="text-sm">Home.tsx</span>
-            </div>
-            <div className="flex items-center gap-1 px-2 py-1 hover:bg-accent rounded-sm cursor-pointer">
-              <FileIcon className="h-4 w-4 shrink-0" />
-              <span className="text-sm">About.tsx</span>
-            </div>
-            <div className="flex items-center gap-1 px-2 py-1 hover:bg-accent rounded-sm cursor-pointer">
-              <FileIcon className="h-4 w-4 shrink-0" />
-              <span className="text-sm">Project.tsx</span>
-            </div>
-            <div className="flex items-center gap-1 px-2 py-1 hover:bg-accent rounded-sm cursor-pointer">
-              <FileIcon className="h-4 w-4 shrink-0" />
-              <span className="text-sm">Blog.tsx</span>
-            </div>
-            <div className="flex items-center gap-1 px-2 py-1 hover:bg-accent rounded-sm cursor-pointer">
-              <FileIcon className="h-4 w-4 shrink-0" />
-              <span className="text-sm">README.md</span>
-            </div>
+            {items.map((item) => (
+              <div
+                key={item.title}
+                className="flex items-center gap-1 px-2 py-1 hover:bg-accent rounded-sm cursor-pointer"
+              >
+                <item.icon className="h-4 w-4 shrink-0" />
+                <span className="text-sm">{item.title}</span>
+              </div>
+            ))}
           </div>
         </div>
       </div>
