@@ -1,38 +1,18 @@
+import { BackgroundLines } from "@/components/ui/background-lines";
+import { Button } from "@/components/ui/button";
+
 export default function Page() {
   return (
-    <div>
-      <section className="bg-gray-100 py-20">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-800">
-              Welcome to My Portfolio
-            </h2>
-            <p className="text-gray-600 mt-4">
-              Showcasing my projects and skills
-            </p>
-          </div>
-          <div className="flex flex-wrap">
-            <div className="w-full md:w-1/3 p-4">
-              <div className="bg-white rounded-lg shadow-lg p-6">
-                <h3 className="text-2xl font-bold text-gray-800">Project 1</h3>
-                <p className="text-gray-600 mt-4">Description of project 1.</p>
-              </div>
-            </div>
-            <div className="w-full md:w-1/3 p-4">
-              <div className="bg-white rounded-lg shadow-lg p-6">
-                <h3 className="text-2xl font-bold text-gray-800">Project 2</h3>
-                <p className="text-gray-600 mt-4">Description of project 2.</p>
-              </div>
-            </div>
-            <div className="w-full md:w-1/3 p-4">
-              <div className="bg-white rounded-lg shadow-lg p-6">
-                <h3 className="text-2xl font-bold text-gray-800">Project 3</h3>
-                <p className="text-gray-600 mt-4">Description of project 3.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
+    <BackgroundLines className="flex items-center justify-center w-full flex-col px-4">
+      <h2 className="bg-clip-text text-transparent text-center bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-2xl md:text-4xl lg:text-7xl font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight">
+        Hi there !! <br /> I'm Mihary Joël <br /> Andriamilanto.
+      </h2>
+      <p className="max-w-xl mx-auto text-sm md:text-lg text-neutral-700 dark:text-neutral-400 text-center">
+        Fullstack web developer 🌐
+      </p>
+      <div className="flex items-center justify-center gap-4 mt-4">
+        <Button>About me </Button>
+      </div>
+    </BackgroundLines>
   );
 }

@@ -8,7 +8,7 @@ export function MainContent({
 }>) {
   return (
     <div className="flex-1 overflow-auto">
-      <div className="flex h-9 items-center border-b px-4 gap-2">
+      <div className="flex h-9 items-center border-b px-4 gap-2 sticky top-0 bg-background z-10">
         {items.map((item) => (
           <div
             className="flex items-center gap-2 border-r pr-2"
@@ -23,7 +23,7 @@ export function MainContent({
           </div>
         ))}
       </div>
-      <div className="p-0">{children}</div>
+      <div>{children}</div>
     </div>
   );
 }
