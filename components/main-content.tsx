@@ -23,7 +23,7 @@ export function MainContent({
           </div>
         ))}
       </div>
-      <div className="p-4">{children}</div>
+      <div className="p-0">{children}</div>
     </div>
   );
 }
