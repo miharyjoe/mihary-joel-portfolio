@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { items } from "./side-bar";
+import Image from "next/image";
 
 export function MainContent({
   children,
@@ -14,6 +15,13 @@ export function MainContent({
             className="flex items-center gap-2 border-r pr-2"
             key={item.title}
           >
+            <Image
+              src={item.src}
+              width={20}
+              height={20}
+              className="shrink-0"
+              alt="logoreact"
+            />
             <Link href={item.url} className="text-sm">
               {item.title}
             </Link>

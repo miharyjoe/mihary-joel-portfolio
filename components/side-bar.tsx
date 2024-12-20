@@ -1,31 +1,32 @@
 import { ChevronDown, FileIcon, Folder } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export const items = [
   {
     title: "Home.tsx",
     url: "/home",
-    icon: FileIcon,
+    src: "./assets/react-2.svg",
   },
   {
-    title: "About.tsx",
+    title: "About.css",
     url: "/about",
-    icon: FileIcon,
+    src: "./assets/tailwindcss-icon.svg",
   },
   {
-    title: "Project.tsx",
+    title: "Project.sql",
     url: "/project",
-    icon: FileIcon,
+    src: "./assets/postgresql.svg",
   },
   {
-    title: "Blog.tsx",
+    title: "Blog.ts",
     url: "/blog",
-    icon: FileIcon,
+    src: "./assets/typescript-icon.svg",
   },
   {
-    title: "README.md",
+    title: "Contact.md",
     url: "/readme",
-    icon: FileIcon,
+    src: "./assets/markdown.svg",
   },
 ];
 
@@ -52,7 +53,14 @@ export function SideBar() {
                 key={item.title}
                 className="flex items-center gap-1 px-2 py-1 hover:bg-accent rounded-sm cursor-pointer"
               >
-                <item.icon className="h-4 w-4 shrink-0" />
+                {/* <item.icon className="h-4 w-4 shrink-0" /> */}
+                <Image
+                  src={item.src}
+                  width={20}
+                  height={20}
+                  className="shrink-0"
+                  alt="logoreact"
+                />
                 <span className="text-sm">
                   <Link href={item.url}>{item.title}</Link>
                 </span>
