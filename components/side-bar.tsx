@@ -31,7 +31,7 @@ export const items = [
 
 export function SideBar() {
   return (
-    <div className="w-0 sm:w-60 border-r transition-all hidden sm:block">
+    <div className="w-0 sm:w-60 border-r transition-all hidden sm:block ">
       <div className="p-2">
         <div className="flex items-center justify-between p-1">
           <div className="flex items-center gap-1">
