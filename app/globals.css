@@ -10,32 +10,23 @@ body {
   :root {
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
-
     --card: 0 0% 100%;
     --card-foreground: 240 10% 3.9%;
-
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
-
     --primary: 240 5.9% 10%;
     --primary-foreground: 0 0% 98%;
-
     --secondary: 240 4.8% 95.9%;
     --secondary-foreground: 240 5.9% 10%;
-
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
-
     --accent: 240 4.8% 95.9%;
     --accent-foreground: 240 5.9% 10%;
-
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
     --ring: 240 10% 3.9%;
-
     --radius: 0.5rem;
   }
 
@@ -46,11 +37,25 @@ body {
     --primary-foreground: 210 40% 98%;
   }
 
+  .theme-slate.dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+  }
+
   .theme-stone {
     --background: 0 0% 100%;
     --foreground: 20 14.3% 4.1%;
     --primary: 20 14.3% 4.1%;
     --primary-foreground: 60 9.1% 97.8%;
+  }
+
+  .theme-stone.dark {
+    --background: 20 14.3% 4.1%;
+    --foreground: 60 9.1% 97.8%;
+    --primary: 60 9.1% 97.8%;
+    --primary-foreground: 20 14.3% 4.1%;
   }
 
   .theme-gray {
@@ -60,6 +65,13 @@ body {
     --primary-foreground: 220.9 39.3% 11%;
   }
 
+  .theme-gray.dark {
+    --background: 224 71.4% 4.1%;
+    --foreground: 220 14.3% 95.9%;
+    --primary: 220.9 39.3% 11%;
+    --primary-foreground: 220 14.3% 95.9%;
+  }
+
   .theme-neutral {
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
@@ -67,9 +79,23 @@ body {
     --primary-foreground: 0 0% 98%;
   }
 
+  .theme-neutral.dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+  }
+
   .theme-red {
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
+    --primary: 0 72.2% 50.6%;
+    --primary-foreground: 0 85.7% 97.3%;
+  }
+
+  .theme-red.dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 85.7% 97.3%;
     --primary: 0 72.2% 50.6%;
     --primary-foreground: 0 85.7% 97.3%;
   }
@@ -81,9 +107,23 @@ body {
     --primary-foreground: 355.7 100% 97.3%;
   }
 
+  .theme-rose.dark {
+    --background: 240 10% 3.9%;
+    --foreground: 355.7 100% 97.3%;
+    --primary: 346.8 77.2% 49.8%;
+    --primary-foreground: 355.7 100% 97.3%;
+  }
+
   .theme-orange {
     --background: 0 0% 100%;
     --foreground: 20 14.3% 4.1%;
+    --primary: 24.6 95% 53.1%;
+    --primary-foreground: 60 9.1% 97.8%;
+  }
+
+  .theme-orange.dark {
+    --background: 20 14.3% 4.1%;
+    --foreground: 60 9.1% 97.8%;
     --primary: 24.6 95% 53.1%;
     --primary-foreground: 60 9.1% 97.8%;
   }
@@ -95,9 +135,23 @@ body {
     --primary-foreground: 355.7 100% 97.3%;
   }
 
+  .theme-green.dark {
+    --background: 240 10% 3.9%;
+    --foreground: 355.7 100% 97.3%;
+    --primary: 142.1 76.2% 36.3%;
+    --primary-foreground: 355.7 100% 97.3%;
+  }
+
   .theme-blue {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+  }
+
+  .theme-blue.dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
     --primary: 221.2 83.2% 53.3%;
     --primary-foreground: 210 40% 98%;
   }
@@ -109,6 +163,13 @@ body {
     --primary-foreground: 26 83.3% 14.1%;
   }
 
+  .theme-yellow.dark {
+    --background: 20 14.3% 4.1%;
+    --foreground: 26 83.3% 14.1%;
+    --primary: 47.9 95.8% 53.1%;
+    --primary-foreground: 26 83.3% 14.1%;
+  }
+
   .theme-violet {
     --background: 0 0% 100%;
     --foreground: 224 71.4% 4.1%;
@@ -116,31 +177,27 @@ body {
     --primary-foreground: 210 20% 98%;
   }
 
+  .theme-violet.dark {
+    --background: 224 71.4% 4.1%;
+    --foreground: 210 20% 98%;
+    --primary: 262.1 83.3% 57.8%;
+    --primary-foreground: 210 20% 98%;
+  }
+
+  /* Common dark mode styles for all themes */
   .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
-
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
-
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
-
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 5.9% 10%;
-
+    --card: var(--background);
+    --card-foreground: var(--foreground);
+    --popover: var(--background);
+    --popover-foreground: var(--foreground);
     --secondary: 240 3.7% 15.9%;
     --secondary-foreground: 0 0% 98%;
-
     --muted: 240 3.7% 15.9%;
     --muted-foreground: 240 5% 64.9%;
-
     --accent: 240 3.7% 15.9%;
     --accent-foreground: 0 0% 98%;
-
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
     --ring: 240 4.9% 83.9%;
@@ -152,6 +209,6 @@ body {
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground transition-colors duration-300;
   }
 }

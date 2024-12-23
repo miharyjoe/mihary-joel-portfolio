@@ -16,10 +16,10 @@ export default function Page() {
         <TextGenerateEffectDemo />
       </div>
       <div className="flex items-center justify-center gap-4 mt-4">
-        <Button variant={"secondary"} size={"lg"}>
+        <Button size={"lg"}>
           <Link href="/about">About me</Link>
         </Button>
-        <Button variant={"destructive"} size={"lg"}>
+        <Button variant="destructive" size={"lg"}>
           <Link href="/project">My project</Link>
         </Button>
       </div>

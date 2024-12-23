@@ -107,7 +107,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${jetBrainsMono.variable} antialiased`}>
       <body>
-        <ThemeProvider defaultTheme="zinc">
+        <ThemeProvider defaultTheme="zinc" defaultDark={false}>
           <div className="h-screen flex flex-col bg-background text-foreground">
             <TopBar />
             <div className="flex-1 flex overflow-hidden">
