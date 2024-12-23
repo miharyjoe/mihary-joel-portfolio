@@ -19,7 +19,7 @@ export const items = [
   },
   {
     title: "Contact.md",
-    url: "/readme",
+    url: "/contact",
     src: "./assets/markdown.svg",
   },
 ];
