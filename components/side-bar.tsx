@@ -1,6 +1,5 @@
-import { ChevronDown, FileIcon, Folder } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
+import { ChevronDown, Folder } from "lucide-react";
+import { SidebarNav } from "./sidebar-nav";
 
 export const items = [
   {
@@ -47,26 +46,7 @@ export function SideBar() {
             <Folder className="h-4 w-4 shrink-0" />
             <span className="text-sm">Mihary portfolio</span>
           </div>
-          <div className="ml-4">
-            {items.map((item) => (
-              <div
-                key={item.title}
-                className="flex items-center gap-1 px-2 py-1 hover:bg-accent rounded-sm cursor-pointer"
-              >
-                {/* <item.icon className="h-4 w-4 shrink-0" /> */}
-                <Image
-                  src={item.src}
-                  width={20}
-                  height={20}
-                  className="shrink-0"
-                  alt="logoreact"
-                />
-                <span className="text-sm">
-                  <Link href={item.url}>{item.title}</Link>
-                </span>
-              </div>
-            ))}
-          </div>
+          <SidebarNav />
         </div>
       </div>
     </div>
