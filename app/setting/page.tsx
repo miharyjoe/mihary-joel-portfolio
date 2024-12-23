@@ -1,5 +1,4 @@
 import { DarkModeToggle } from "@/components/dark-mode-toggle";
-import { ThemePreview } from "@/components/theme-preview";
 import { ThemeSelector } from "@/components/theme-selector";
 import { Separator } from "@/components/ui/separator";
 
