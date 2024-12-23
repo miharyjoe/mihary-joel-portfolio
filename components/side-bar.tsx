@@ -18,11 +18,6 @@ export const items = [
     src: "./assets/postgresql.svg",
   },
   {
-    title: "Blog.ts",
-    url: "/blog",
-    src: "./assets/typescript-icon.svg",
-  },
-  {
     title: "Contact.md",
     url: "/readme",
     src: "./assets/markdown.svg",
