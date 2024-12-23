@@ -6,6 +6,7 @@ import { ActivityBar } from "@/components/activity-bar";
 import { SideBar } from "@/components/side-bar";
 import { StatusBar } from "@/components/status-bar";
 import { MainContent } from "@/components/main-content";
+import { ThemeProvider } from "@/lib/theme-provider";
 
 const jetBrainsMono = localFont({
   src: [
@@ -106,15 +107,17 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${jetBrainsMono.variable} antialiased`}>
       <body>
-        <div className="h-screen flex flex-col bg-background text-foreground">
-          <TopBar />
-          <div className="flex-1 flex overflow-hidden">
-            <ActivityBar />
-            <SideBar />
-            <MainContent>{children}</MainContent>
+        <ThemeProvider defaultTheme="zinc">
+          <div className="h-screen flex flex-col bg-background text-foreground">
+            <TopBar />
+            <div className="flex-1 flex overflow-hidden">
+              <ActivityBar />
+              <SideBar />
+              <MainContent>{children}</MainContent>
+            </div>
+            <StatusBar />
           </div>
-          <StatusBar />
-        </div>
+        </ThemeProvider>
       </body>
     </html>
   );

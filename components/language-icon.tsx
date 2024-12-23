@@ -26,7 +26,7 @@ export const getLanguageIcon = (language: string) => {
         className="h-3 w-3"
         width={3}
         height={3}
-        alt="react"
+        alt="java"
       />
     ),
     Spring_boot: (
@@ -35,7 +35,7 @@ export const getLanguageIcon = (language: string) => {
         className="h-3 w-3"
         width={3}
         height={3}
-        alt="react"
+        alt="Spring_boot"
       />
     ),
     mdx: (
@@ -44,7 +44,7 @@ export const getLanguageIcon = (language: string) => {
         className="h-3 w-3"
         width={3}
         height={3}
-        alt="react"
+        alt="mdx"
       />
     ),
     Tailwind_CSS: (
@@ -53,7 +53,7 @@ export const getLanguageIcon = (language: string) => {
         className="h-3 w-3"
         width={3}
         height={3}
-        alt="react"
+        alt="Tailwind_CSS"
       />
     ),
     Postgresql: (
@@ -62,7 +62,7 @@ export const getLanguageIcon = (language: string) => {
         className="h-3 w-3"
         width={3}
         height={3}
-        alt="react"
+        alt="Postgresql"
       />
     ),
   };
