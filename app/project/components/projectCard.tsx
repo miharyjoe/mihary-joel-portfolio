@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   Card,
   CardContent,
@@ -20,6 +21,19 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     <Card className="group relative overflow-hidden border transition-all duration-300 hover:shadow-lg hover:shadow-primary/10">
       {/* Subtle gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-primary/5 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+
+      {/* Affichage conditionnel de l'image si on fournit project.imageUrl */}
+      {project.imageUrl && (
+        <div className="overflow-hidden">
+          <Image
+            src={project.imageUrl}
+            alt={project.title}
+            width={600}
+            height={300}
+            className="h-full w-full object-fill"
+          />
+        </div>
+      )}
 
       <div className="relative">
         <CardHeader className="space-y-4 pb-4">
