@@ -9,16 +9,16 @@ export function TopBar() {
         <div className="flex items-center gap-2">
           <Image src="/vscode.svg" alt="VSCode Logo" width={20} height={20} />
           <button className="hover:bg-accent px-2 py-1 rounded-sm text-sm">
-            Fichier
+            File
           </button>
           <button className="hover:bg-accent px-2 py-1 rounded-sm text-sm">
-            Edition
+            Edit
           </button>
           <button className="hover:bg-accent px-2 py-1 rounded-sm text-sm">
-            Sélection
+            Selection
           </button>
           <button className="hover:bg-accent px-2 py-1 rounded-sm text-sm">
-            Affichage
+            View
           </button>
         </div>
 
