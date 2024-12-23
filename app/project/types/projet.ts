@@ -5,4 +5,5 @@ export interface Project {
   languages: string[];
   category?: string;
   date?: string;
+  imageUrl?: string;
 }
