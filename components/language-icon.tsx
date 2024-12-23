@@ -1,26 +1,70 @@
-import {
-  FileCode2,
-  Binary,
-  Box,
-  Chrome,
-  Coffee,
-  Database,
-  FileJson,
-  Terminal,
-  Type,
-} from "lucide-react";
+import Image from "next/image";
 
 export const getLanguageIcon = (language: string) => {
   const icons: Record<string, JSX.Element> = {
-    TypeScript: <Type className="h-3 w-3" />,
-    JavaScript: <FileJson className="h-3 w-3" />,
-    Python: <Terminal className="h-3 w-3" />,
-    React: <Chrome className="h-3 w-3" />,
-    "Node.js": <Box className="h-3 w-3" />,
-    Java: <Coffee className="h-3 w-3" />,
-    SQL: <Database className="h-3 w-3" />,
-    "C++": <Binary className="h-3 w-3" />,
-    default: <FileCode2 className="h-3 w-3" />,
+    TypeScript: (
+      <Image
+        src="/assets/typescript-icon.svg"
+        className="h-3 w-3"
+        width={3}
+        height={3}
+        alt="typescript"
+      />
+    ),
+    React: (
+      <Image
+        src="/assets/react-2.svg"
+        className="h-3 w-3"
+        width={3}
+        height={3}
+        alt="react"
+      />
+    ),
+    java: (
+      <Image
+        src="/assets/java.svg"
+        className="h-3 w-3"
+        width={3}
+        height={3}
+        alt="react"
+      />
+    ),
+    Spring_boot: (
+      <Image
+        src="/assets/spring.svg"
+        className="h-3 w-3"
+        width={3}
+        height={3}
+        alt="react"
+      />
+    ),
+    mdx: (
+      <Image
+        src="/assets/markdown.svg"
+        className="h-3 w-3"
+        width={3}
+        height={3}
+        alt="react"
+      />
+    ),
+    Tailwind_CSS: (
+      <Image
+        src="/assets/tailwindcss-icon.svg"
+        className="h-3 w-3"
+        width={3}
+        height={3}
+        alt="react"
+      />
+    ),
+    Postgresql: (
+      <Image
+        src="/assets/postgresql.svg"
+        className="h-3 w-3"
+        width={3}
+        height={3}
+        alt="react"
+      />
+    ),
   };
 
   return icons[language] || icons.default;
