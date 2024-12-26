@@ -181,4 +181,19 @@ export const skills: Skill[] = [
     color: "text-blue-400",
     experience: "",
   },
+  {
+    name: "Spring Boot",
+    type: "framework",
+    icon: (
+      <Image
+        src="/assets/spring.svg"
+        width={6}
+        height={6}
+        className="h-6 w-6"
+        alt="spring"
+      />
+    ),
+    color: "text-blue-400",
+    experience: "",
+  },
 ];
