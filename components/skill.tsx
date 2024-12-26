@@ -68,10 +68,10 @@ export default function SkillsSection() {
                         <TooltipTrigger asChild>
                           <Card className="overflow-hidden transition-all hover:shadow-lg hover:-translate-y-1">
                             <CardContent className="p-6">
-                              <div className="flex items-center space-x-4">
+                              <div className="flex items-center  space-x-4">
                                 <div className={skill.color}>{skill.icon}</div>
                                 <div className="space-y-1">
-                                  <h4 className="text-lg font-semibold">
+                                  <h4 className="text-lg mt-5 font-semibold">
                                     {skill.name}
                                   </h4>
                                   <Badge variant="secondary">

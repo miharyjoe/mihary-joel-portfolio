@@ -1,5 +1,4 @@
 import { Skill } from "@/types/skill";
-import { Brain, Database, Globe, Laptop, Server } from "lucide-react";
 import Image from "next/image";
 
 export const skills: Skill[] = [
@@ -16,7 +15,7 @@ export const skills: Skill[] = [
       />
     ),
     color: "text-blue-500",
-    experience: "3 years",
+    experience: "",
   },
   {
     name: "React",
@@ -27,32 +26,56 @@ export const skills: Skill[] = [
         width={6}
         height={6}
         className="h-6 w-6"
-        alt="typeScript"
+        alt="React"
       />
     ),
     color: "text-cyan-500",
-    experience: "4 years",
+    experience: "",
   },
   {
     name: "Next.js",
     type: "framework",
-    icon: <Globe className="h-6 w-6" />,
+    icon: (
+      <Image
+        src="/assets/nextjs.svg"
+        width={6}
+        height={6}
+        className="h-6 w-6"
+        alt="nextjs"
+      />
+    ),
     color: "text-black dark:text-white",
-    experience: "2 years",
+    experience: "",
   },
   {
     name: "Javascript",
     type: "language",
-    icon: <Server className="h-6 w-6" />,
+    icon: (
+      <Image
+        src="/assets/javascript.svg"
+        width={6}
+        height={6}
+        className="h-6 w-6"
+        alt="javascript"
+      />
+    ),
     color: "text-green-500",
-    experience: "3 years",
+    experience: "",
   },
   {
     name: "Python",
     type: "language",
-    icon: <Brain className="h-6 w-6" />,
+    icon: (
+      <Image
+        src="/assets/python.svg"
+        width={6}
+        height={6}
+        className="h-6 w-6"
+        alt="python"
+      />
+    ),
     color: "text-yellow-500",
-    experience: "5 years",
+    experience: "",
   },
   {
     name: "Java",
@@ -63,18 +86,26 @@ export const skills: Skill[] = [
         width={6}
         height={6}
         className="h-6 w-6"
-        alt="typeScript"
+        alt="java"
       />
     ),
     color: "text-yellow-500",
-    experience: "5 years",
+    experience: "",
   },
   {
     name: "MongoDB",
     type: "database",
-    icon: <Database className="h-6 w-6" />,
+    icon: (
+      <Image
+        src="/assets/mongo.svg"
+        width={6}
+        height={6}
+        className="h-6 w-6"
+        alt="mongo"
+      />
+    ),
     color: "text-green-600",
-    experience: "2 years",
+    experience: "",
   },
   {
     name: "PostgreSQL",
@@ -85,7 +116,7 @@ export const skills: Skill[] = [
         width={6}
         height={6}
         className="h-6 w-6"
-        alt="typeScript"
+        alt="postgresql"
       />
     ),
     color: "text-blue-600",
@@ -93,7 +124,7 @@ export const skills: Skill[] = [
   },
   {
     name: "Tailwind CSS",
-    type: "tool",
+    type: "framework",
     icon: (
       <Image
         src="/assets/tailwindcss-icon.svg"
@@ -108,9 +139,17 @@ export const skills: Skill[] = [
   {
     name: "Docker",
     type: "tool",
-    icon: <Laptop className="h-6 w-6" />,
+    icon: (
+      <Image
+        src="/assets/docker.svg"
+        width={6}
+        height={6}
+        className="h-6 w-6"
+        alt="docker"
+      />
+    ),
     color: "text-blue-400",
-    experience: "1 year",
+    experience: "",
   },
   {
     name: "Aws",
@@ -121,17 +160,25 @@ export const skills: Skill[] = [
         width={6}
         height={6}
         className="h-6 w-6"
-        alt="typeScript"
+        alt="aws"
       />
     ),
     color: "text-blue-400",
-    experience: "1 year",
+    experience: "",
   },
   {
-    name: "Gcp",
+    name: "GCP",
     type: "tool",
-    icon: <Laptop className="h-6 w-6" />,
+    icon: (
+      <Image
+        src="/assets/gcp.svg"
+        width={6}
+        height={6}
+        className="h-6 w-6"
+        alt="gcp"
+      />
+    ),
     color: "text-blue-400",
-    experience: "1 year",
+    experience: "",
   },
 ];
