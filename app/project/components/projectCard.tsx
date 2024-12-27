@@ -10,7 +10,7 @@ import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Calendar } from "lucide-react";
 import Link from "next/link";
 import { getLanguageIcon } from "@/components/language-icon";
-import { Project } from "../types/projet";
+import { Project } from "@/types/projet";
 
 interface ProjectCardProps {
   project: Project;
