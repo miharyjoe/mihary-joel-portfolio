@@ -7,6 +7,7 @@ import { SideBar } from "@/components/side-bar";
 import { StatusBar } from "@/components/status-bar";
 import { MainContent } from "@/components/main-content";
 import { ThemeProvider } from "@/lib/theme-provider";
+import { Analytics } from "@vercel/analytics/react";
 
 const jetBrainsMono = localFont({
   src: [
@@ -113,7 +114,9 @@ export default function RootLayout({
             <div className="flex-1 flex overflow-hidden">
               <ActivityBar />
               <SideBar />
-              <MainContent>{children}</MainContent>
+              <MainContent>
+                {children} <Analytics />
+              </MainContent>
             </div>
             <StatusBar />
           </div>
