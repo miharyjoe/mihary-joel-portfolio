@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { TextGenerateEffectDemo } from "./components/textGenerete";
 import SkillsSection from "@/components/skill";
+import { Separator } from "@/components/ui/separator";
 
 export default function Page() {
   return (
@@ -26,6 +27,7 @@ export default function Page() {
           </Button>
         </div>
       </BackgroundLines>
+      <Separator />
       <SkillsSection />
     </>
   );

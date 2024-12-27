@@ -6,7 +6,7 @@ export function StatusBar() {
       <div className="flex items-center gap-4">
         <div className="flex items-center gap-2">
           <span className="flex items-center gap-1">
-            <span className=" border border-blue-400 rounded px-1 py-0.5 bg-blue-400 ">
+            <span className=" border border-blue-400 rounded px-1 py-0.5 bg-blue-400 font-mono text-white ">
               Mihary Joel
             </span>
           </span>
