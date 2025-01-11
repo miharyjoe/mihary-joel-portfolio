@@ -10,6 +10,24 @@ export const projectList = [
     imageUrl: "/assets/tipsmylife2.jpeg",
   },
   {
+    title: "SherlockFinder",
+    description:
+      "A website designed to help you search across hundreds of social networks and websites to see where your username is taken or available.",
+    projectUrl: "https://sherlockfinder.vercel.app/",
+    languages: [
+      "TypeScript",
+      "React",
+      "Nextjs",
+      "Tailwind_CSS",
+      "Python",
+      "FastAPI",
+      "Sherlock",
+    ],
+    category: "Full Stack",
+    date: "",
+    imageUrl: "/assets/sherlockfinder.jpeg",
+  },
+  {
     title: "Image to Pdf",
     description: "An API to convert images to pdf in spring boot",
     projectUrl: "https://github.com/miharyjoe/Image-To-Pdf-Api",
