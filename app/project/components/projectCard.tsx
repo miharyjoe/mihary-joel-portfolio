@@ -24,13 +24,13 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 
       {/* Affichage conditionnel de l'image si on fournit project.imageUrl */}
       {project.imageUrl && (
-        <div className="overflow-hidden">
+        <div className="w-[500px] h-[200px] overflow-hidden">
           <Image
             src={project.imageUrl}
             alt={project.title}
             width={600}
             height={300}
-            className="h-full w-full object-fill"
+            className="h-full w-full object-cover"
           />
         </div>
       )}
