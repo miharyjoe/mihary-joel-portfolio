@@ -29,6 +29,15 @@ export const getLanguageIcon = (language: string) => {
         alt="java"
       />
     ),
+    Python: (
+      <Image
+        src="/assets/python.svg"
+        className="h-3 w-3"
+        width={3}
+        height={3}
+        alt="java"
+      />
+    ),
     Spring_boot: (
       <Image
         src="/assets/spring.svg"
